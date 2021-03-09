@@ -1,0 +1,72 @@
+/* 禁止缩放表单 */
+input[type="submit"], input[type="reset"], input[type="button"], input {
+    resize: none;
+    border: none;
+}
+
+/* 取消链接高亮  */
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* 设置HTML5元素为块 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* 初始化 */
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button,
+form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+
+/* 移动端点击a链接出现蓝色背景问题解决 */
+a:link, a:active, a:visited, a:hover {
+    background: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+
+em, i {
+    font-style: normal;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+strong {
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+textarea {
+    resize: none; 
+}
+
+p {
+    word-wrap: break-word; 
+}
+
+/**鼠标指针，兼容ios点击事件**/
+.cursorXss {
+    cursor: pointer;
+}
+
+/**图片默认自适应，并去除图片下发的空白**/
+.imgCss {
+    width: 100%;
+    height: auto;
+    width: auto \9
+; /* ie8 */
+    display: block;
+    -ms-interpolation-mode: bicubic; 
+}
+

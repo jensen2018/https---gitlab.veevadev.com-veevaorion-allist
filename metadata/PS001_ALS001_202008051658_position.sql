@@ -1,0 +1,18 @@
+-- 岗位级别picklist
+UPDATE `picklist_values` SET `label` = 'CEO', `description` = 'CEO' WHERE (`id` = 'd1e89a30-3933-11e7-9ab4-784f43949f5b');
+UPDATE `picklist_values` SET `label` = '营销公司负责人', `description` = '营销公司负责人' WHERE (`id` = 'cf9e6bf5-3935-11e7-9629-784f43949f5b');
+UPDATE `picklist_values` SET `label` = '大区总监', `description` = '大区总监' WHERE (`id` = 'd9852842-3935-11e7-882b-784f43949f5b');
+UPDATE `picklist_values` SET `label` = '大区经理', `description` = '大区经理' WHERE (`id` = 'deeb13de-3935-11e7-bfbd-784f43949f5b');
+UPDATE `picklist_values` SET `label` = '地区经理', `description` = '地区经理' WHERE (`id` = 'e30fda45-3935-11e7-9202-784f43949f5b');
+INSERT INTO `picklist_values` (`id`, `picklist_id`, `name`, `label`, `order`, `description`, `deleted`, `created_by`, `created_on`, `modified_by`, `modified_on`, `source`) VALUES ('e30fda45-3935-11e7-9202-784f43941801', '34acb3de-3933-11e7-9b77-784f43949f5b', 'position_level_6', '销售代表', '6', '销售代表', '0', '1', '2018-07-24 07:50:42', '1', '2017-05-15 16:00:00', 'custom');
+INSERT INTO `picklist_values` (`id`, `picklist_id`, `name`, `label`, `order`, `description`, `deleted`, `created_by`, `created_on`, `modified_by`, `modified_on`, `source`) VALUES ('e30fda45-3935-11e7-9202-784f43941802', '34acb3de-3933-11e7-9b77-784f43949f5b', 'position_level_7', 'SFE经理', '7', 'SFE经理', '0', '1', '2018-07-24 07:50:42', '1', '2017-05-15 16:00:00', 'custom');
+INSERT INTO `picklist_values` (`id`, `picklist_id`, `name`, `label`, `order`, `description`, `deleted`, `created_by`, `created_on`, `modified_by`, `modified_on`, `source`) VALUES ('e30fda45-3935-11e7-9202-784f43941803', '34acb3de-3933-11e7-9b77-784f43949f5b', 'position_level_8', '市场经理', '8', '市场经理', '0', '1', '2018-07-24 07:50:42', '1', '2017-05-15 16:00:00', 'custom');
+INSERT INTO `picklist_values` (`id`, `picklist_id`, `name`, `label`, `order`, `description`, `deleted`, `created_by`, `created_on`, `modified_by`, `modified_on`, `source`) VALUES ('e30fda45-3935-11e7-9202-784f43941804', '34acb3de-3933-11e7-9b77-784f43949f5b', 'position_level_9', '产品经理', '9', '产品经理', '0', '1', '2018-07-24 07:50:42', '1', '2017-05-15 16:00:00', 'custom');
+INSERT INTO `picklist_values` (`id`, `picklist_id`, `name`, `label`, `order`, `description`, `deleted`, `created_by`, `created_on`, `modified_by`, `modified_on`, `source`) VALUES ('e30fda45-3935-11e7-9202-784f43941805', '34acb3de-3933-11e7-9b77-784f43949f5b', 'position_level_10', '销售主管', '10', '销售主管', '0', '1', '2018-07-24 07:50:42', '1', '2017-05-15 16:00:00', 'custom');
+INSERT INTO `picklist_values` (`id`, `picklist_id`, `name`, `label`, `order`, `description`, `deleted`, `created_by`, `created_on`, `modified_by`, `modified_on`, `source`) VALUES ('e30fda45-3935-11e7-9202-784f43941806', '34acb3de-3933-11e7-9b77-784f43949f5b', 'position_level_11', '市场总监', '11', '市场总监', '0', '1', '2018-07-24 07:50:42', '1', '2017-05-15 16:00:00', 'custom');
+
+-- page_layout字段
+UPDATE `page_layout_fields` SET `label` = '岗位版本' WHERE (`id` = '50b82ed9-a3f9-11e7-8777-186590dcd3c9');
+UPDATE `page_layout_fields` SET `label` = '上级岗位名称' WHERE (`id` = '50b83085-a3f9-11e7-a60e-186590dcd3c9');
+INSERT INTO `page_layout_fields` (`id`, `page_layout_id`, `type`, `object_field_id`, `label`, `order`, `colspan`, `is_mandatory`, `is_readonly`, `display_mode`, `deleted`, `created_by`, `created_on`, `modified_by`, `modified_on`, `is_header`, `is_highlight`, `disable_click`) VALUES ('50b81541-a3f9-11e7-a60e-186590dcd3c9', '50b82c45-a3f9-11e7-bbfb-186590dcd3c9', 'field', '62774df3-1b69-4db1-8d26-fdc239a5e769', '上级岗位编码', '3', '6', '1', '0', 'both', '0', '1', '2019-06-24 11:23:44', '1', '2020-08-05 09:01:33', '0', '0', '1');
+UPDATE `page_layout_fields` SET `deleted` = '1' WHERE (`id` = '50b81541-a3f9-11e7-a60e-186590dcd3c9');

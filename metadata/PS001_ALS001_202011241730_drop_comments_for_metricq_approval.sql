@@ -1,0 +1,1 @@
+INSERT INTO `approval_config` (`deleted`, `created_on`, `modified_on`, `id`, `comments_mandatory`, `created_by`, `modified_by`, `object_id`, `confirmation_active`, `comments_without`) VALUES ('0', '2020-10-30 22:06:38.000000', '2020-10-30 22:06:42.000000', '4', '0', '1', '1', '6ed2cbde-90f3-rtgb-96b0-e4b318c6b596', '0', '1');

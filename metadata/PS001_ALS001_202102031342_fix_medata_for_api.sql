@@ -1,0 +1,1 @@
+delete from object_fields where id ='0825eaca-272f-4c75-9ffc-256f5a8bb240';

@@ -1,0 +1,181 @@
+body{
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.app-content-loading{
+	top: 0;
+	left: 0;
+	display: block;
+	text-align:center;
+	height:100%;
+	width:100%;
+	background:#fff;
+	position:absolute;
+	z-index:8888
+}
+.app-content-loading img{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:40px;
+	height:40px;
+	margin-left:-20px;
+	margin-top:-20px;
+}
+@-webkit-keyframes rotation{
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(360deg);}
+}
+.Rotation{
+	-webkit-transform: rotate(360deg);
+	animation: rotation 0.8s linear infinite;
+	-moz-animation: rotation 0.8s linear infinite;
+	-webkit-animation: rotation 0.8s linear infinite;
+	-o-animation: rotation 0.8s linear infinite;
+}
+.report-analysis{
+	height: 195px;
+	margin: 0px;
+	width: 100%;
+	background-color: #f6f6f6;
+}
+.homepage-container{
+	box-sizing: border-box;
+	height: 100%;
+	padding: 5px 5px 0px;
+	position: relative;
+}
+
+.homepage-container .homepage-row:first-child{
+    margin-bottom:5px;
+
+}
+.homepage-row{
+	box-sizing: border-box;
+	height: 80px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.homepage-col{
+	position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+	flex: 1;
+	background:#fff;
+	border-radius: 3px;
+	border:2px solid #eee;
+	box-sizing: border-box;
+
+}
+.homepage-row .last-col{
+	/*background: #fafafa;*/
+	border:2px solid #eee;
+}
+
+.homepage-row .homepage-col:first-child{
+	/*border-right: 1px dashed #eee; */
+	margin-right: 5px;
+}
+.homepage-data{
+	margin-left: 55px;
+	text-align: center;
+}
+.homepage-data-span{
+	margin-top: 20px;
+	height: 25px;
+	font-size: 20px;
+	/*border: 1px red solid;*/
+}
+.homepage-data-span .data-span-big-font{
+	font-size: 20px;
+}
+.homepage-data-span .data-span-big-font .warning{
+	color: #ff5543;
+}
+.homepage-data-span .data-span-big-font .success{
+	color: #F89728;
+}
+.homepage-data-span .data-span-big-font .hideTarget{
+	color:#F89728;
+	font-size: 20px;
+}
+.homepage-data-span .data-span-small-font{
+	font-size: 10px;
+}
+.homepage-data-desc{
+	height: 17px;
+	font-size: 13px;
+	/*border: 1px red solid;*/
+	color: #c6c6c6;
+}
+.homepage-date{
+	width: 100%;
+	height:25px;
+	line-height: 25px;
+	font-size: 9px;
+	color: #b5b5b5;
+	text-align: center;
+}
+.homepage-icon{
+	/*border: 1px red solid;*/
+	left: 15px;
+	top: 25px;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	background-size: 35px 35px;
+}
+
+.icon-call-finished{
+	background-image: url(../img/coaching-finished.png);
+}
+.icon-metting-finished{
+	background-image: url(../img/meeting-finished.png);
+}
+.icon-patient-finished{
+	background-image: url(../img/target-finished.png);
+}
+.icon-sales-finished{
+	background-image: url(../img/working-days-finished.png);
+}
+.icon0-unfinished{
+	background-image: url(../img/call-unfinished.png);
+}
+.icon1-finished{
+	background-image: url(../img/target-finished.png);
+}
+.icon1-unfinished{
+	background-image: url(../img/target-unfinished.png);
+}
+.icon2-finished{
+	background-image: url(../img/coaching-finished.png);
+}
+.icon2-unfinished{
+	background-image: url(../img/coaching-unfinished.png);
+}
+.icon3-finished{
+	background-image: url(../img/working-days-finished.png);
+}
+.icon3-unfinished{
+	background-image: url(../img/working-days-unfinished.png);
+}
+
+.homepage-rep-title{
+	height: 21px;
+	font-size: 15px;
+	/*border: 1px red solid;*/
+	color: #F89728;
+}
+.homepage-data-view{
+	font-size: 13px;
+	color: black;
+}
+.homepage-data-view-title{
+	margin-top: 10px;
+}

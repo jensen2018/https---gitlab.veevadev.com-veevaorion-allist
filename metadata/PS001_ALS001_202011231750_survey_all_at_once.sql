@@ -1,0 +1,1 @@
+UPDATE `surveys` SET `answer_type` = 'all_at_once' WHERE (`id` = '1');

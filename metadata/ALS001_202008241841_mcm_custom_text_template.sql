@@ -1,0 +1,9 @@
+-- 用户自定义文本内容，显示给医生端看到的信息
+INSERT INTO `custom_text_template` (`deleted`, `created_on`, `modified_on`, `id`, `name`, `text`, `type`, `configurations`, `created_by`, `modified_by`) VALUES (0, NOW(), NOW(), 1, '4001', '输入名字错误', 'CANIS', NULL, 1, 1);
+INSERT INTO `custom_text_template` (`deleted`, `created_on`, `modified_on`, `id`, `name`, `text`, `type`, `configurations`, `created_by`, `modified_by`) VALUES (0, NOW(), NOW(), 2, '4002', '微信code已被使用', 'CANIS', NULL, 1, 1);
+INSERT INTO `custom_text_template` (`deleted`, `created_on`, `modified_on`, `id`, `name`, `text`, `type`, `configurations`, `created_by`, `modified_by`) VALUES (0, NOW(), NOW(), 3, 'disclaimer', NULL, 'CANIS', NULL, 1, 1);
+INSERT INTO `custom_text_template` (`deleted`, `created_on`, `modified_on`, `id`, `name`, `text`, `type`, `configurations`, `created_by`, `modified_by`) VALUES (0, NOW(), NOW(), 4, 'RegToOther', '很抱歉，由于多点执业等原因，您的微信已被{name}（{department}，{hospital}）认证，请联系代表处理。', 'CANIS', NULL, 1, 1);
+INSERT INTO `custom_text_template` (`deleted`, `created_on`, `modified_on`, `id`, `name`, `text`, `type`, `configurations`, `created_by`, `modified_by`) VALUES (0, NOW(), NOW(), 5, 'RegByOther', '很抱歉，此医生已被其他用户认证，请联系代表解绑后再尝试认证', 'CANIS', NULL, 1, 1);
+INSERT INTO `custom_text_template` (`deleted`, `created_on`, `modified_on`, `id`, `name`, `text`, `type`, `configurations`, `created_by`, `modified_by`) VALUES (0, NOW(), NOW(), 6, 'survey_no_survey', '没有这个问卷', 'CANIS', NULL, 1, 1);
+INSERT INTO `custom_text_template` (`deleted`, `created_on`, `modified_on`, `id`, `name`, `text`, `type`, `configurations`, `created_by`, `modified_by`) VALUES (0, NOW(), NOW(), 7, 'survey_answered', '问卷已答', 'CANIS', NULL, 1, 1);
+INSERT INTO `custom_text_template` (`deleted`, `created_on`, `modified_on`, `id`, `name`, `text`, `type`, `configurations`, `created_by`, `modified_by`) VALUES (0, NOW(), NOW(), 8, 'survey_thanks', '提交成功，感谢您的参与！', 'CANIS', NULL, 1, 1);

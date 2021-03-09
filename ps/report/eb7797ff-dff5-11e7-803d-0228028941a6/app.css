@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.report-container{
+    margin: 0;
+    padding: 0;
+    height: 44px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.report-item{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex:1;
+    border-right: 1px dotted #eee;
+}
+.report-container:last-child{
+    border-right: none;
+}
+.report-item-data{
+    color: #f89728;
+    font-size: 28px;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
+}
+.report-item-label{
+    color: #999;
+    font-size: 11px;
+}
+.report-size {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+

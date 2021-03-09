@@ -1,0 +1,3 @@
+-- 更新服务号和小程序的生产配置
+UPDATE `tencent_mp_info` SET `deleted` = 0, `created_on` = now(), `modified_on` = now(), `app_id` = 'wx1e370f9bb0bb8051', `parent_id` = NULL, `status` = 'unbind', `type` = 'official account', `name` = 'account', `label` = '公众号', `created_by` = 1, `modified_by` = 1, `app_secret` = NULL WHERE `id` = 1;
+UPDATE `tencent_mp_info` SET `deleted` = 0, `created_on` = now(), `modified_on` = now(), `app_id` = 'wx9e22b4f064d587ed', `parent_id` = 'wx1e370f9bb0bb8051', `status` = 'unbind', `type` = 'mini program', `name` = 'mini', `label` = '会议助理', `created_by` = 1, `modified_by` = 1, `app_secret` = '6d71756aa9e56ae5edad4870121b3e53' WHERE `id` = 2;

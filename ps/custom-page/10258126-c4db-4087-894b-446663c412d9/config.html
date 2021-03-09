@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>功能选择</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes" />
+    <script src="../common.js"></script>
+    <link rel="stylesheet" href="css/middle_common.css" />
+    <link rel="stylesheet" href="css/middle.css" />
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="zqui-middle zqui-item-box">
+
+    <div class="middle-left">
+
+        <!--<div class="middle-left-ul">
+            <div class="middle-left-title">标准化相关文档</div>
+            <div class="middle-left-li zqui-item-box">
+                <div class="middle-left-icon"><img src="img/list_icon.png"></div>
+                <div class="middle-left-name"><a target="_blank" href="https://veevasystems.egnyte.com/app/index.do#storage/files/1/Shared/china/China%20SFA/Service/Documents/Project%20Documents/Standardization/02.Requirement">标准化需求文档</a></div>
+            </div>
+            <div class="middle-left-li zqui-item-box">
+                <div class="middle-left-icon"><img src="img/list_icon.png"></div>
+                <div class="middle-left-name">标准化验收文档</div>
+            </div>
+            
+        </div>-->
+        <div class="middle-left-ul">
+            <div class="middle-left-title">支持文档</div>
+            <div class="middle-left-li zqui-item-box">
+                <div class="middle-left-icon"><img src="img/list_icon.png"></div>
+                <div class="middle-left-name"><a target="_blank" href="https://wiki.veevadev.com/pages/viewpage.action?pageId=206243260">初始化指导手册</a></div>
+            </div>
+                  <div class="middle-left-li zqui-item-box">
+                <div class="middle-left-icon"><img src="img/list_icon.png"></div>
+                 <div class="middle-left-name"><a target="_blank" href="https://veevasystems.egnyte.com/fl/2MaGk3AUnS">数据模板列表</a></div>
+            </div>
+            <!-- <div class="middle-left-li zqui-item-box">
+                <div class="middle-left-icon"><img src="img/list_icon.png"></div>
+                <div class="middle-left-name">模块维护列表</div>
+            </div>-->
+           
+        </div>
+
+    </div>
+
+    <div class="item-flex">
+        <div class="middle-info zqui-item-box">
+            <div class="middle-info-left">
+                <div>
+                    <img src="img/new_icon.png">
+                    <p>提示</p>
+                </div>
+            </div>
+            <div class="middle-info-right">
+                <p>选择标准模块阶段需要1次数据库覆盖，两次环境bulid<a target="_blank" href="http://jenkins.veevasfa.cn/" class="a-css">&nbsp;jenkins传送门</a></p>
+                
+            </div>
+        </div>
+        <div class="zqui-item-box">
+
+            <div class="item-flex middle-content">
+
+                <div class="middle-content-main">
+                </div>
+
+            </div>
+
+            <div class="middle-right">
+                <div class="middle-right-text">已选择</div>
+                <div class="middle-right-main">
+                </div>
+
+                <div class="zqui-item-box middle-btn-mian">
+                    <div class="middle-btn">生成代码</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script src="js/mibble_opt.js"></script>
+<script>
+   
+    var titleData = [];
+    var newMibble;
+    CustomPageUtils.getDataByMethodName('index',function(response) {
+        if (response.length === 0) {
+            alert('无配置数据');
+        } else {
+            titleData = response;
+
+            newMibble = new mibble(titleData);
+            newMibble.showtype();
+
+            newMibble.compute();
+            $(window).resize(function () {
+                newMibble.compute();
+            });
+        
+        }
+            
+    });
+
+    $('.middle-content-main').on('click', '.li-action', function () {
+        var key = $(this).attr('data-key');
+        var id = $(this).attr('data-id');
+        var name = $(this).attr('data-name');
+        $(this).toggleClass('active')
+        newMibble.optAction(key, id, name);
+    });
+
+
+    $('.middle-btn').on('click',function () {
+        //返回的数据
+        CustomPageUtils.saveDataByMethodWithParams('save', newMibble.list, function(response) {
+
+            alert(response.message);
+
+        });
+    })
+
+</script>
+
+</body>
+</html>

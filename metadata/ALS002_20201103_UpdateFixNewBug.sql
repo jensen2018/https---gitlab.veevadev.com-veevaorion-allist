@@ -1,0 +1,3 @@
+-- 修复销售主管看不见维护目标医生action
+UPDATE `role_to_object_permissions` SET `role_id` = 'b74845ad-b5fe-11ea-aab5-0215c63fce1a', `object_id` = '6ed2cbde-90f3-asfz-96b0-e4b318c6b596', `allow_read` = 1, `allow_create` = 1, `allow_update` = 1, `allow_delete` = 1, `deleted` = 0, `created_by` = 1, `created_on` = '2020-07-05 10:32:12', `modified_by` = 1, `modified_on` = '2020-11-03 05:13:56', `allow_import` = 0, `allow_export` = 1, `allow_read_all` = 0, `allow_update_all` = 0, `allow_update_attachment` = 0, `allow_terminate_approval` = NULL, `allow_modify_approver` = 0, `allow_create_page_list` = 0 WHERE `id` = 'bbfe671c-af1c-4155-a8ce-607f9063b44a';
+

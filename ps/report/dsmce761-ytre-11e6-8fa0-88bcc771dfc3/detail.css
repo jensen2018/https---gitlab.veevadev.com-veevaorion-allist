@@ -1,0 +1,445 @@
+html body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #efeceb;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+p{
+	margin:0;
+	padding:0;
+}
+
+ul,li{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+#rankList{
+	height: 140px;
+	background: #fff !important;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.report-detail-header {
+    height: 40px;
+    text-align: center;
+    background-color: #f89728;
+    color: #fff;
+    font-size: 17px;
+    line-height: 43px;
+    position: relative;
+}
+.report-detail-header .home-link{
+	position:absolute;
+	right:15px;
+	top:0;
+	bottom:0;
+	height:20px;
+	line-height:20px;
+	margin:auto;
+	display:inline-block;
+
+}
+#time{
+	color: #f89728;
+    border: 1px solid #f89728;
+}
+.report-detail-header .home-link .home-icon {
+    background: url(../img/backhome.png) center center no-repeat;
+    background-size: 20px 17px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+.report-analysis{
+	margin-bottom: 5px;
+	width: 100%;
+	background-color: #fff;
+}
+.report-container{
+	padding-bottom:10px;
+}
+.report-board{
+	text-align:center;
+}
+.report-customer{
+	display: -webkit-box;
+    display: -webkit-flex;	
+	display: flex;
+	height: 105px;
+    -webkit-box-pack: justify;
+	-webkit-justify-content: space-around;
+	justify-content:space-around;	
+	position: relative;
+}
+.border-bottom{
+	position:absolute;
+	bottom:0;
+	left:15px;
+	height:0;
+	width:calc(100% - 30px);
+    border-bottom:1px dotted #eee;
+}
+.flex-left{
+	height: 100%;
+	-webkit-box-flex-basis: 40%;
+	-webkit-flex-basis: 40%;
+	flex-basis: 40%;
+	width:calc(100% - 155px);
+	text-align: center;
+}
+.flex-right{
+	height: 105px;
+	width:125px;
+	padding:0 15px;
+	position:relative;
+}
+.data-span{
+	height:35px;
+	line-height: 35px;
+	padding-left: 10px
+}
+.data-span .data-title{
+	font-size: 12px;
+	float:left;
+}
+
+.data-span .data-number{
+	font-size: 16px;
+	float:right;
+}
+
+.datatime{
+	display: block;
+	margin: 30px auto 0px;
+	height: 35px;
+	font-size:12px;
+}
+
+.flex-left .message{
+	font-size: 20px;
+	color:#f89729;
+}
+.flex-left .message-text{
+	font-size:12px;
+	color:#000;
+}
+.xl-line{
+	position:absolute;
+	top:35px;
+	left:15px;
+	width:125px;
+	height:0;
+	border-bottom:1px dotted #eee;
+}
+.xl-line-left{
+	position:absolute;
+	top:10px;
+	left:0;
+	height:85px;
+	width:0;
+	border-left:1px dotted #eee;
+
+}
+.xl-line-1{
+	position:absolute;
+	top:70px;
+	left:15px;
+	width:125px;
+	height:0;
+	border-bottom:1px dotted #eee;
+}
+.xl-line-2{
+	position:absolute;
+	top:52px;
+	left:15px;
+	width:125px;
+	height:0;
+	border-bottom:1px dotted #eee;
+}
+/*tab页*/
+.tab{
+	height:34px;
+	width:100%;
+	line-height: 34px;
+	font-size:15px;
+	text-align:center;
+	display: -webkit-box;
+    display: -webkit-flex;	
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-around;
+	justify-content:space-around;
+	border-bottom:1px solid #eee;
+}
+.tab li{
+	display:inline-block;
+	width:100px;
+
+}
+.tabBorder{
+	color:#82e1fc;
+	border-bottom:3px solid #82e1fc;
+}
+
+/*两个看板*/
+.board{
+	padding:15px 15px 0 15px ;
+	display: -webkit-box;
+    display: -webkit-flex;	
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-around;
+	justify-content:space-around;
+}
+.board-left,.board-right{
+	display: -webkit-box;
+    display: -webkit-flex;	
+	display: flex;
+	background:#eee;
+	height:65px;
+	border-radius:5px;
+	padding:0 5px;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-around;
+	justify-content:space-around;
+	width:calc((100% - 25px) / 2);
+
+}
+
+.board-compare .an-data{
+	min-width: 66px;
+}
+.board-compare .an-data,.board-compare .loop{
+	padding:0;
+}
+.board-time{
+	text-align:left;
+	min-width: 60px;
+}
+.board-time .an-money-data{
+	height: 30px;
+    line-height: 27px;
+}
+.board-time .an-time{
+	height:30px;
+	line-height: 30px;
+	font-size:11px;
+}
+.board-time .an-text{
+	font-size:8px;
+}
+.board-time .an-number{
+	font-size:11px;
+}
+/*医院列表*/
+.tab-hospital{
+	display:block;
+}
+.tab-hospital-item p{
+	font-size:15px;
+	color:#333;
+	margin:0 15px;
+	border-bottom:1px solid #eee;
+	padding: 10px 0;
+}
+.tab-hospital-item p .hospital-name-container{
+	display: inline-block;
+	width:calc(100vw - 120px);
+}
+
+.tab-hospital-item p .hospital-data{
+	float:right;
+}
+.tab-hospital-item p .hospital-data .hospital-data-number{
+	font-size:16px;
+	color:#f89728;
+
+}
+.tab-hospital-item p .hospital-data .hospital-data-text{
+	font-size:12px;
+	color:#595959;
+}
+/*时间下拉框*/
+#time {
+    color: #f89728;
+    border: 1px solid #f89728;
+}
+.filter{
+	height:49px;
+	background:#efeceb;
+	padding:0 15px;
+}
+.filter-left{
+	width:192px;
+	height:35px;
+	float:left;
+	margin-top:7px;
+}
+.filter-item{
+	display: inline-block;
+	line-height: 35px;
+	text-align: left;
+	height:35px;
+	width:68px;
+	/*color:#999;*/
+	font-size:14px;
+	padding:0 10px;
+	border-radius:5px;
+	/*border:1px solid #eee;*/
+	background:#fff;
+	position:relative;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.filter-item:after{
+	content: "\f078";
+	position:absolute;
+	font-family: fontAwesome;
+	right:10px;
+	width:10px;
+	height:10px;
+
+}
+.filter-right{
+	float:right;
+	height:49px;
+	line-height: 49px;
+	width:90px;
+}
+.filter .filter-right p{
+	line-height: 25px;
+	height:25px;
+	margin-top:12px;
+	background:#fff;
+	width:92px;
+	border:1px solid #eee;
+	border-radius:5px;
+}
+.filter-right p button{
+	height:25px;
+	width:46px;
+	float:left;
+	background:none;
+	border:none;
+	font-size:14px;
+	color:#666;
+	outline: none;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.filter-right p button.active{
+	background:#f89728;
+	color:#fff;
+	border-radius:5px;
+}
+
+
+.tab_rep{
+    width: 100%;
+    margin:1px auto 2px auto;
+    border-top: 1px solid #B3B3B3;
+/*    border-bottom: 1px solid #B3B3B3;*/
+
+}
+.title{
+    box-sizing: border-box;
+    padding: 0px;
+    color: #5f646e;
+    height: 35px;
+    line-height: 34px;
+    border-bottom: 2px solid #eee;
+    border-top: 1px solid #eee;
+    margin: 0 15px;
+}
+.title_name {
+    color: #5f646e;
+    font-size: 14px;
+    line-height: 34px;
+}
+.title_link {
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 34px;
+}
+.tab_header{
+    width:100%;
+    color:white;
+    height: 35px;
+    background-color: #7ABEEB;
+    line-height: 34px;
+    font-size: 14px;
+
+}
+.tab_month{
+    width:100%;
+    color:#5f646e;
+    height: 35px;
+    background-color: white;
+    line-height: 34px;
+    font-size: 13px;
+}
+.tab_quarter{
+    width:100%;
+    color:#5f646e;
+    height: 35px;
+    background-color: #F7F7F7;
+    line-height: 34px;
+	font-size: 13px;
+}
+.tab_year{
+    width:100%;
+    color:#5f646e;
+    height: 35px;
+    background-color: white;
+    line-height: 34px;
+	font-size: 13px;
+}
+.time_data{
+	line-height: 34px;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+.number{
+	line-height: 34px;
+    display: inline-block;
+    width:25%;
+    text-align: center;
+}
+.year_growth{
+	line-height: 34px;
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+}
+.month_growth{
+	line-height: 34px;
+    display: inline-block;
+    width:15%;
+    text-align: center;
+}
+.reach{
+	line-height: 34px;
+    display: inline-block;
+    width:15%;
+    text-align: center;
+}
+.number .an-number{
+	font-size:13px;
+}
+.number.an-text {
+	font-size: 10px;
+}
+a{
+text-decoration:none;
+	color:#333;
+}
+.comment{
+    font-size:10px;
+    color:#adadad;
+    text-align: center;
+    line-height: 1;
+}

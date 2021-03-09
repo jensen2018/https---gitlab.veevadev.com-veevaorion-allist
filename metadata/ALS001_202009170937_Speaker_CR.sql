@@ -1,0 +1,4 @@
+-- 修改原有的讲者dcr menu为讲者列表
+-- dcr id 009891f0-c4f2-11ea-9285-999a0f71b698
+update menus_assignments set menu_id = '27f3d610-cf56-11ea-9b73-378e6b95aa8a' where id in ('1405df9f-ece2-11ea-bc49-0215c63fce1a','3d796454-e8d6-11ea-bc49-0215c63fce1a','40732588-eccf-11ea-bc49-0215c63fce1a','522406cb-66ce-44b1-bba4-53c9b39b1012','6ba081e7-e13a-11ea-bc49-0215c63fce1a','7d4e15bc-6018-4cf3-9b14-7d5e8d35da7b','9d264c17-e0f8-11ea-bc49-0215c63fce1a','adb385b2-ece5-11ea-bc49-0215c63fce1a','b5a0db7a-ecd2-11ea-bc49-0215c63fce1a');
+update page_lists set label = '讲者列表' where id = 'd3fbde08-32b7-4547-8e0d-3c79e6cdae67';

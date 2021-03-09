@@ -1,0 +1,152 @@
+html body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #efeceb;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+.filter{
+	height:49px;
+	background:#efeceb;
+	padding:0 15px;
+}
+.filter-left{
+	width:192px;
+	height:35px;
+	float:left;
+	margin-top:7px;
+}
+.filter-item{
+	display: inline-block;
+	line-height: 35px;
+	text-align: left;
+	height:35px;
+	width:68px;
+	/*color:#999;*/
+	font-size:14px;
+	padding:0 10px;
+	border-radius:5px;
+	/*border:1px solid #eee;*/
+	background:#fff;
+	position:relative;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.filter-item:after{
+	content: "\f078";
+	position:absolute;
+	font-family: fontAwesome;
+	right:10px;
+	width:10px;
+	height:10px;
+
+}
+.report-detail-header {
+    height: 40px;
+    text-align: center;
+    background-color: #f89728;
+    color: #fff;
+    font-size: 17px;
+    line-height: 43px;
+    position: relative;
+}
+.report-detail-header .home-link{
+	position:absolute;
+	right:15px;
+	top:0;
+	bottom:0;
+	height:20px;
+	line-height:20px;
+	margin:auto;
+	display:inline-block;
+}
+.report-detail-header .home-link .home-icon {
+    background: url(../img/backhome.png) center center no-repeat;
+    background-size: 20px 17px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+.hospital{
+    height:50px;
+    width:100%;
+    background-color: white;
+	line-height: 50px;
+}
+.hospital_title{
+    line-height:45px;
+    color: #F2C685;
+    margin-left: 20px;
+
+}
+.hospital_name{
+    line-height:50px;
+    margin-left: 20px;
+
+}
+.hospital_id{
+	display: none;
+}
+.context_list{
+
+	margin-top: 5px;
+	width: 100%;
+	background-color: #fff;
+}
+.list_name{
+	line-height: 20px;
+}
+.tab-invoice-item{
+	font-size:13px;
+	color:#333;
+	border-bottom:1px solid #eee;
+	padding: 10px 0;
+}
+.tab-invoice-item .invoice-icon{
+	margin-left: 20px;
+	float:left;
+	background-image: url("../img/more.png");
+	background-size:cover;
+    width:20px;
+	height:20px;
+
+}
+.tab-invoice-item .invoice-datatime{
+	clear:both;
+	margin-left:20px;
+}
+
+.tab-invoice-item .invoice-name{
+	margin-left: 20px;
+}
+.tab-invoice-item .invoice-number{
+	float:right;
+	color:#f89728;
+	margin-right: 30px;
+	margin-left: 20px;
+}
+a{
+text-decoration:none;
+	color:#333;
+}
+.list_detail{
+	display:none;
+}
+.list_header{
+	margin-top: 10px;
+}
+.list_header .context_title{
+	width:100px;
+	display: inline-block;
+	text-align:right;
+	color:#f89728;
+}
+.list_header .style-f1{
+	margin-left: 10px;
+	display: inline-block;
+	text-align:left;
+}
+.tab-invoice li{
+list-style-type:none;
+}
